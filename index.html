@@ -8,19 +8,22 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     </head>
     <body>
-        <div class="header">
+        <header class="header">
             <h1>Age Checker</h1>
             <p>Calculate your exact age in years, months, and days with our free age calculator. Perfect for quick age calculation for registration forms, vastu, numerology or what day of the week you were born.</p>
-        </div>
-        <div class="entire">
+        </header>
+        <main class="entire">
             <div class="container">
                 <div class="checker-box">
-                    <p>Date of Birth</p>
-                    <input type="date" id="date" name="date">
+                    <label for="dob">Date of Birth</label>
+                    <div class="input-row">
+                        <input type="date" id="dob" name="date" value="2005-09-13">
+                        <button id="calculate">Calculate</button>
+                    </div>
                 </div>
                 <div class="display">
                     <p id="text-display">Your Current Age</p>
-                    <h1 id="calculated-age">23yrs</h1>
+                    <h1 id="calculated-age"></h1>
                     <p id="day">Born on a </p>
                 </div>
                 <div class="cards">
@@ -41,7 +44,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-        
+        </main>
+        <script src="script.js"></script>
     </body>
 </html>
