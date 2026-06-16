@@ -90,6 +90,8 @@ label{
 }
 #text-display{
     font-size: 20px;
+    font-weight: 600;
+
 }
 .cards{
     display: grid;
@@ -100,7 +102,11 @@ label{
     border-block: 1px solid #cc8004;
 }
 .card{
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 20px;
     border: 0;
     /* outline: 0; */
@@ -111,6 +117,9 @@ label{
 }
 .card:hover{
     transform: translateY(-3px);
+}
+.span{
+    font-size: 14px;
 }
 .future{
     display: flex;
